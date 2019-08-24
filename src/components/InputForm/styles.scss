@@ -1,0 +1,122 @@
+.form-parent__container {
+    display: flex;
+    background: #a3e3e3;
+    justify-content: center;
+    height: 100vh;
+}
+
+.contain-form {
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    margin: 2%;
+    background-color: #ceeef2;
+    border-radius: 24px;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.form__label {
+    margin-top: 2%;
+    font-size: 40px;
+    font-weight: 500;
+    color: slateblue;
+}
+
+.label-text__container {
+    flex: 1;
+    width: 100%;
+    text-align: center;
+}
+
+.generators-container {
+    display: flex;
+    flex: 5;
+    width: 100%;
+}
+
+.buttons__controllers {
+    flex: 1;
+    width: 20%;
+    padding-left: 10px;
+}
+
+.bt-random-number {
+    width: 10rem;
+    height: 3rem;
+    border-radius: 13px;
+    font-size: 20px;
+    outline: none;
+    cursor: pointer;
+}
+
+.bt-sort {
+    margin-top: 2rem;
+}
+
+
+.sort__dropdown {
+    background-color: #666464;
+    width: 9.5rem;
+    position: absolute;
+    margin-top: 0;
+    text-align: center;
+    padding: 5px;
+}
+
+.sort_buttons {
+    cursor: pointer;
+    font-size: 19px;
+    color: aliceblue;
+}
+
+.bt-ascend:hover, .bt-descend:hover {
+    background-color: #a3e3e3;
+    font-size: 20px;
+    padding: 5px;
+    color: #00d0ff;
+}
+
+.form-amount__input {
+    width: 90%;
+    height: 2.5rem;
+    margin-bottom: 1rem;
+    border-radius: 3px;
+    border: none;
+    outline: none;
+    text-align: center;
+    font-size: 16px;
+}
+
+.list-number {
+    flex: 3.5;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-right: 24px;
+    margin-bottom: 2rem;
+    border-radius: 1rem;
+    background-color: #a6a9ab;
+}
+
+.phone-container {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 50%;
+    flex-grow: 1;
+    flex-wrap: wrap;
+    padding: 15px;
+    max-height: 34rem;
+}
+
+.max-min {
+    text-align: center;
+    margin-top: 2rem;
+    font-size: 20px;
+}
+
+.min-max__labels {
+    font-weight: 600;
+    text-decoration: underline;
+    color: cornflowerblue;
+}
