@@ -2,7 +2,7 @@
 Welcome to Random Phone Number generator.
 
 [![Build Status](https://travis-ci.com/Quantum-35/randomPhoneNumber.svg?branch=deploy)](https://travis-ci.com/Quantum-35/randomPhoneNumber)
-
+[![Coverage Status](https://coveralls.io/repos/github/Quantum-35/randomPhoneNumber/badge.svg?branch=develop)](https://coveralls.io/github/Quantum-35/randomPhoneNumber?branch=develop)
 
 This is the front end part of a random number generation app of a telecommunication company.
 There a several edge cases covered. Like the maximum number of numbers generated is 10000, and one can sort the numbers.
