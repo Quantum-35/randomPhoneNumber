@@ -1,4 +1,20 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+
+Welcome to Random Phone Number generator.
+
+[![Build Status](https://travis-ci.com/Quantum-35/randomPhoneNumber.svg?branch=deploy)](https://travis-ci.com/Quantum-35/randomPhoneNumber)
+
+
+This is the front end part of a random number generation app of a telecommunication company.
+There a several edge cases covered. Like the maximum number of numbers generated is 10000, and one can sort the numbers.
+
+Use the Procedure below to clone and run this project.
+
+## To run the app
+1- Clone the Repository
+
+2- Navigate to the root director of the project and type `yarn install`.
+
+Use the scripts below to test the app.
 
 ## Available Scripts
 
