@@ -5,6 +5,7 @@ cache:
   directories:
   - node_modules
 script:
+  - yarn add coverage
   - yarn run test -- -u --coverage 
 
 before_install:
