@@ -14,8 +14,8 @@ describe('Test InputForm Component', () => {
 
     it('renders without crushing',() => {
         const wrapper = mount(<InputForm />);
-        console.log(wrapper.find('input'));
         expect(wrapper.find('.form-parent__container').exists()).toBe(true)
+        expect(wrapper).toMatchSnapshot();
     });
     it('can handleInputChange', async() => {
         const wrapper = mount(<InputForm />);

@@ -50,14 +50,12 @@ export class InputForm extends React.Component {
     }
 
     updateSte = (mobileNumbers) => {
-        const phonelist = localStorage.getItem('numbers');
-        const phoneList = phonelist && phonelist.split(',');
         const maxMinn = {
-            max: phoneList && Math.max(...mobileNumbers),
-            min: phoneList && Math.min(...mobileNumbers)
+            max: mobileNumbers && Math.max(...mobileNumbers),
+            min: mobileNumbers && Math.min(...mobileNumbers)
         }
-        localStorage.setItem('maxMini', JSON.stringify(maxMinn));
         this.setState({maxMin: maxMinn});
+        localStorage.setItem('maxMini', JSON.stringify(maxMinn));
     }
 
     handleOnMouseEnter = () => {
@@ -114,7 +112,7 @@ export class InputForm extends React.Component {
                         </label>
                     </div>
                     <div className="generators-container">
-                        <form className="buttons__controllers">
+                        <form className="buttons__controllers" onSubmit={this.handleGeneratePhoneNumber}>
                             <input type="text"
                                 required onChange={this.handleInputChange}
                                 style={{ border: this.state.error ? `1px solid red` : 'none'}}
@@ -123,7 +121,7 @@ export class InputForm extends React.Component {
                                 className="form-amount__input"
                             />
         
-                            <button type="submit" onClick={this.handleGeneratePhoneNumber} className="bt-random-number">Generate!</button>
+                            <button type="submit" className="bt-random-number">Generate!</button>
         
                             <button
                                 type="button"
